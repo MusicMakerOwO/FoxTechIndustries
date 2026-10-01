@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+  /* Light mode palette */
+  --ink:     #f7f7f5;      /* Light background */
+  --chalk:   #ffffff;       /* Pure white for cards/surfaces */
+  --steel:   #e8eaed;       /* Light gray for subtle backgrounds */
+  --slate:   #5a6270;       /* Medium gray for secondary text */
+  --muted:   #6b7280;       /* Muted text color */
+  --line:    rgba(0,0,0,0.08);  /* Light dividers */
+  --line-lt: rgba(0,0,0,0.06);  /* Even lighter dividers */
+  --ember:   #e8440a;       /* Keep accent color */
+  --ember-dk:#c03608;       /* Keep accent dark */
+  --surface: #ffffff;       /* White surface */
+  --surface-lt: #f7f7f5;    /* Off-white surface */
+  --bright:  #0a0c10;       /* Dark text for contrast */
+  --text-secondary: #3d4459; /* Secondary text color */
+
+  --sans:    'Inter', system-ui, sans-serif;
+  --serif:   'DM Serif Display', Georgia, serif;
+
+  font: 16px/1.6 var(--sans);
+  color: var(--muted);
+  background: var(--ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: var(--bright);
+  font-family: var(--sans);
+  letter-spacing: -0.03em;
+}
+
+p { margin: 0; }
+
+a {
+  color: var(--bright);
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--ember);
+  color: #fff;
+}
